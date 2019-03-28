@@ -7,7 +7,7 @@
         <Form class="mt-5">
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control form control-lg">
+                <input type="email" v-model="email" class="form-control form control-lg">
             </div>
             <button type="submit" class="btn btn-primary">submit</button>
         </Form> 
@@ -16,10 +16,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 <script>
-    new Vue({
+    var vm = new Vue({
         el: '#app',
         data: {
-
+            email: 'martijn@mail.com'
         }
     });
 </script>
